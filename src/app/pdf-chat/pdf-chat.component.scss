@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+  height: calc(100% - 64px); 
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.pdf-viewer-container {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.logout-button {
+  margin-left: auto;
+}

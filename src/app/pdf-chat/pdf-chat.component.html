@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="content">
+    <div class="chat-container">
+      <app-chat-bot
+        (userQuery)="handleUserQuery($event)"
+        [aiResponse]="lastAnswerObj"
+        [isLoading]="isLoading">
+      </app-chat-bot>
+    </div>
+    <div class="pdf-viewer-container">
+      <app-pdf-viewer [pdfSrc]="pdfRoute" style="width: 100%;"></app-pdf-viewer>
+    </div>
+  </div>
+</div>
