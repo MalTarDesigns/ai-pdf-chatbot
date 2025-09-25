@@ -1,0 +1,39 @@
+<mat-card class="chat-card">
+  <mat-card-header>
+    <button [routerLink]="['']" mat-button>
+      <mat-icon>arrow_back</mat-icon> Back to PDF Table
+    </button>
+  </mat-card-header>
+  <mat-card-content class="chat-content">
+    <div #chatHistory class="chat-history">
+      <div
+        *ngFor="let message of messages"
+        [ngClass]="{
+          'ai-message': message.isAI,
+          'user-message': !message.isAI,
+          'chat-bubble': true
+        }"
+      >
+        <mat-icon class="message-icon">{{ message.isAI ? 'smart_toy' : 'person' }}</mat-icon>
+        <span markdown>{{ message.text }}</span>
+      </div>
+     <mat-progress-spinner
+      *ngIf="isLoading"
+      mode="indeterminate"
+      diameter="24"
+      class="loading-spinner">
+     </mat-progress-spinner>
+    </div>
+    <form [formGroup]="chatForm" (ngSubmit)="sendMessage()" class="chat-input-container">
+      <textarea
+        class="chat-input"
+        formControlName="userInput"
+        placeholder="Type your question here..."
+        (keydown)="onEnter($event)"
+      ></textarea>
+      <button mat-button type="submit" [disabled]="isLoading || !chatForm.get('userInput')?.value">
+        <mat-icon>send</mat-icon> Send
+      </button>
+    </form>
+  </mat-card-content>
+</mat-card>
