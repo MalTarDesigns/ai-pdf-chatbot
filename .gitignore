@@ -1,0 +1,129 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+.npm
+.yarn-integrity
+
+# Environment
+environment-local.ts
+environment-local.js
+.env
+.env.local
+.env.production
+.env.*.local
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+.idea_modules/
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Testing
+/coverage
+/test-results
+/karma-results
+/e2e/*.js
+/e2e/*.map
+*.spec.js
+*.spec.js.map
+
+# Build files
+*.tsbuildinfo
+.angular/
+.cache/
+.parcel-cache/
+.turbo/
+
+# Package files
+*.tgz
+package-lock.json.backup
+yarn.lock.backup
+
+# Documentation build
+/docs/_build
+/docs/.vuepress/dist
+/compodoc
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.tmp/
+.temp/
+
+# Local development
+/local
+.local/
+*.local.*
+
+# OpenAI API keys and secrets
+api-keys.txt
+secrets.json
+credentials.json
+
+# Performance profiling
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# Bundle analyzer
+/bundle-report.html
+/stats.json
+webpack-stats.json
