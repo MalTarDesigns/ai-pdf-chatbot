@@ -1,0 +1,31 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eceff1;
+  }
+  
+  mat-card {
+    width: 400px;
+  }
+  
+  mat-card-header {
+    text-align: center;
+  }
+  
+  .login-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-error {
+    font-size: 12px;
+    color: red;
+  }
+  
