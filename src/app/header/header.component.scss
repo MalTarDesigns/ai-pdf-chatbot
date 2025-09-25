@@ -1,0 +1,31 @@
+.header-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .navigation a {
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .active-link {
+    border-bottom: 2px solid white;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-button mat-icon {
+    margin-right: 5px;
+  }
+  
+  

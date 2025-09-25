@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="header-toolbar">
+  <span class="logo" (click)="navigateHome()" style="cursor: pointer">
+    <!-- <img src="assets/logo.png" alt="App Logo" class="logo-image" /> -->
+     <span>AI Chat Bot App</span>
+  </span>
+
+  <span class="spacer"></span>
+
+  <nav class="navigation">
+    <!-- TODO: Links go here if needed -->
+    <!-- <a mat-button routerLink="/" routerLinkActive="active-link"
+      >PDFs</a
+    >
+    <a mat-button routerLink="/pdf-viewer" routerLinkActive="active-link">Chat</a> -->
+  </nav>
+
+  <button
+    mat-button
+    color="warn"
+    (click)="logout()"
+    aria-label="Logout"
+  >
+    <mat-icon>logout</mat-icon> Logout
+  </button>
+</mat-toolbar>
