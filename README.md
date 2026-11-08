@@ -27,7 +27,7 @@ Upload any PDF document and ask questions about its content. The app processes t
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/ai-pdf-chatbot.git
+git clone https://github.com/MalTarDesigns/ai-pdf-chatbot.git
 cd ai-pdf-chatbot
 ```
 
